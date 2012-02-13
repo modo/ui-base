@@ -1,0 +1,50 @@
+#footer {
+	clear: both;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	
+	.well {
+		background: lighten(@grayLightest, 3%);
+		border: 1px solid darken(@grayLightest, 3%);
+		padding: 8px 10px;
+		margin-bottom: 4px;
+		.border-radius(2px);
+		.box-shadow(none);
+		.clearfix;
+		
+		nav ul {
+			margin: 0;
+			
+			li {
+				line-height: @baseFontSize * 1.5;
+			
+				a {
+					color: @grayLight;
+					text-shadow: 0 1px white;
+					&:hover { color: @grayDark; }
+				}
+			
+			}
+		}
+	}
+}
+
+#quickLinksNav .nav li { font-size: @baseFontSize * .928571429; }
+
+#legal .nav li, nav.social { font-size: @baseFontSize * .785714286; }
+
+#copyright, nav.social { 
+	line-height: 16px; 
+	margin: (@baseMargin / 2) 0;
+}
+
+nav.social li { 
+	margin-left: 12px;
+	&:first-child { margin-left: 0; }
+}
+
+#copyright {
+	text-align: right;
+	font-size: @baseFontSize * .714285714;
+	color: @grayLighter;
+}
