@@ -15,18 +15,22 @@
 		border-color: rgba(0,0,0,.15);
 	}
 	
-	.form-actions {
-		background: none;
-		padding-bottom: 0;
-		margin-top: @baseMargin * 2;
+	form {
+		margin-top: @baseMargin;
+		margin-bottom: 0;
 		
-		button { margin-bottom: 0; }
+		.form-actions {
+			background: none;
+			padding-bottom: 0;
+			margin-top: @baseMargin * 2;
+			
+			button { margin-bottom: 0; }
+		}
 	}
 }
 
 .box {
 	padding: @baseMargin;
-	padding-bottom: 0;
 	margin-bottom: @baseMargin * 1.5;
 	.border-radius(4px);
 	border: 1px solid lighten(@gray, 28%);
