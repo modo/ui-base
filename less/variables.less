@@ -7,55 +7,51 @@
 // GLOBAL VALUES
 // --------------------------------------------------
 
-// Primary color hues
 @white:                 #FFF;
-@black:                 #030303;
-@gray: 					#87898b;
-@teal:                  #17AECB;
-@green:                 #86C240;
+@black:                 #000;
+@green:                 #06973F;
 @red:                   #C30;
 @yellow:				#F7B312;
 @orange:				#D6751E;
 @purple:				#5A4A5E;
-@aqua:					#7EC0B0;
 @blue:                  #329ABD;
-@tan:					#B7B38C;
 @navy:					#3A576C;
 
-// Nicknames
-// gray
-@grayDarker:            darken(@gray, 35%);
-@grayDark:              darken(@gray, 26%);
-@grayLight:             lighten(@gray, 10%);
-@grayLighter:           lighten(@gray, 18%);
-@grayLightest:          lighten(@gray, 42%);
-// teal
-@tealDarker:            desaturate(@teal, 65%);
-@tealDark:              desaturate(@teal, 34%);
-@tealLight:             desaturate(lighten(@tealDark, 35%),10%);
-@tealLighter:           lighten(@tealDark, 51%);
-// other
-@greenDark:				darken(@green, 13%);
+// Grays
+@grayDarker:            #222;
+@grayDark:              #333;
+@gray:                  #555;
+@grayLight:             #999;
+@grayLighter:           #eee;
+@grayLightest:			#f6f6f6;
 
 
 // Links
-@linkColor:             @teal;
+@linkColor:             #069;
 @linkColorHover:        darken(@linkColor, 15%);
 
 
-
 // Typography
-@baseFontFamily:        'Helvetica Neue', Helvetica, Arial, sans-serif;
 @baseFontSize:          14px;
 @baseLineHeight:        1.3;
 @textColor:             @grayDark;
 @baseMargin:			15px;
+@baseFontFamily:        @sansFamily;
+
+@sansFamily:			"Helvetica Neue", Arial, Helvetica, sans-serif;
+@serifFamily:			Georgia, Times, serif;
+@monospacedFamily:		Menlo, Monaco, Courier, monospace;
+@geometricFamily:		@baseFontFamily;
+@condensedFamily:       @baseFontFamily;
+
+
 
 // Buttons
 @primaryButtonBackground:    @linkColor;
 
 // Boxes
-@boxActionBackground:		 @tealLighter;
+@boxActionBackground:		 lighten(@linkColor, 68%);
+@boxInfoBackground:			 #f6f6f6;
 
 // Paths
 @baseImageURL: 		"../img";
@@ -78,13 +74,13 @@
 
 // Navbar
 @navbarHeight:                    40px;
-@navbarBackground:                lighten(@gray, 36%);
-@navbarBackgroundHighlight:       @white;
+@navbarBackground:                @grayDarker;
+@navbarBackgroundHighlight:       @grayDark;
 
 @navbarText:                      @grayLight;
-@navbarLinkColor:                 @gray;
-@navbarLinkColorHover:            @grayDark;
-@navbarLinkColorActive:			  @greenDark;
+@navbarLinkColor:                 @grayLight;
+@navbarLinkColorHover:            @white;
+@navbarLinkColorActive:			  @green;
 
 // Form states and alerts
 @warningText:             #c09853;

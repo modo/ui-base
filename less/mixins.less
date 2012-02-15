@@ -97,11 +97,11 @@
 
 #font {
 	#family {
-		.serif() { font-family: 'adelle-1', 'adelle-2', Georgia, serif; }
-		.sans-serif() { font-family: @baseFontFamily; }
-		.monospace() { font-family: Menlo, Monaco, "Courier New", monospace; }
-		.geometric() { font-family: 'proxima-nova-1', 'proxima-nova-2', sans-serif }
-		.condensed() { font-family: 'ff-din-web-condensed-1', 'ff-din-web-condensed-2', sans-serif; }
+		.serif() {      font-family: @serifFamily; }
+		.sans-serif() { font-family: @sansFamily; }
+		.monospace() {  font-family: @monospacedFamily; }
+		.geometric() {  font-family: @geometricFamily; }
+		.condensed() {  font-family: @condensedFamily; }
 	}
 	
 	.shorthand(@size: @baseFontSize, @weight: normal, @lineHeight: @baseLineHeight) {

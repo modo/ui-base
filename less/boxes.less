@@ -50,7 +50,7 @@
 	}
 	
 	&.box-info{
-		.boxBackground(#f6f6f6, darken(#f6f6f6, 3%), darken(@white, 20%));
+		.boxBackground(@boxInfoBackground, darken(@boxInfoBackground,3%), darken(desaturate(@boxInfoBackground, 25%), 18%));
 		.box-header {
 			border-bottom-color: darken(@white, 20%);
 			text-shadow: 0 1px 0 #FFF;
@@ -58,10 +58,11 @@
 	}
 	
 	&.box-action {
-		.boxBackground(@boxActionBackground, darken(@boxActionBackground,3%), darken(desaturate(@boxActionBackground, 25%), 18%));	
+		.boxBackground(@boxActionBackground, darken(@boxActionBackground,3%), darken(desaturate(@boxActionBackground, 55%), 22%));	
 		.box-header {
-			border-bottom-color: darken(desaturate(@boxActionBackground, 25%), 18%); 
+			border-bottom-color: darken(desaturate(@boxActionBackground, 55%), 22%); 
 			text-shadow: 0 1px 0 #FFF;
+			.box-shadow(0 1px 0 rgba(255,255,255,1));
 		}
 	}
 }

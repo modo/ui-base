@@ -31,13 +31,17 @@ p {
 // --------
 
 h1, h2, h3, h4, h5, h6 {
-	margin: 0 0 @baseMargin * .5 0;
+	margin: @baseMargin * 1.75 0 @baseMargin * .5 0;
 	#font > #family > .geometric;
 	color: @grayDark;
 	text-rendering: optimizelegibility; // Fix the character spacing for headings
 	small {
 		font-weight: normal;
 		color: @grayLight;
+	}
+	
+	&:first-child {
+		margin-top: 0;
 	}
 }
 
