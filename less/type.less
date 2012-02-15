@@ -18,9 +18,7 @@ p {
 	}
 }
 
-p.small {
-	font-size: @baseFontSize * .85;
-}
+.small-text { font-size: @baseFontSize * .85; }
 
 .lead {
 	margin-bottom: @baseMargin;
@@ -64,8 +62,7 @@ h3 {
 	}
 }
 
-h4, h5, h6 {
-}
+h4, h5, h6 {}
 
 h4 {
 	font-size: @baseFontSize * 1.14;
@@ -245,3 +242,8 @@ small {
 cite {
 	font-style: normal;
 }
+
+.warning-text { color: @orange; }
+.danger-text, .error-text { color: @red; }
+.success-text { color: @green; }
+.info-text { color: @grayLight; }
