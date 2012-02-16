@@ -5,37 +5,40 @@
 // Make the div behave like a button
 .btn-group,
 .btn-row {
-  position: relative;
-  .clearfix(); // clears the floated buttons
-  .ie7-restore-left-whitespace();
+	position: relative;
+	margin-bottom: @baseMargin;
+	.clearfix(); // clears the floated buttons
+	.ie7-restore-left-whitespace();
 }
 
 // Space out series of button groups
 .btn-group + .btn-group {
-  margin-left: 5px;
+	margin-left: 5px;
 }
 
 // Optional: Group multiple button groups together for a toolbar
 .btn-toolbar {
-  margin-top: @baseMargin / 2;
-  margin-bottom: @baseMargin / 2;
-  .btn-group {
-    display: inline-block;
-    .ie7-inline-block();
-  }
+	margin-top: @baseMargin / 2;
+	margin-bottom: @baseMargin / 2;
+	.btn-group {
+		display: inline-block;
+		.ie7-inline-block();
+	}
 }
 
 // Float them, remove border radius, then re-add to first and last elements
 .btn-group .btn {
-  position: relative;
-  float: left;
-  margin-left: -1px;
-  .border-radius(0);
+	position: relative;
+	float: left;
+	margin-left: -1px;
+	.border-radius(0);
+	margin-bottom: 0;
 }
 
 .btn-row .btn {
 	float: left;
 	margin-left: @baseMargin * .5;
+	margin-bottom: 0;
 	&:first-child { margin-left: 0; }
 }
 

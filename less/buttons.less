@@ -6,11 +6,13 @@
 // --------------------------------------------------
 
 // Core
+@btn-top-margin: 6px;
+
 .btn {
 	display: block;
-	padding: 8px 12px;
-	margin-top: @baseMargin / 2;
-	margin-bottom: @baseMargin / 2;
+	padding: @btn-top-margin 12px;
+	//margin-top: @baseMargin / 2; this was proving to be undesired in most cases
+	margin-bottom: @baseMargin;
 	color: @grayDark;
 	font-size:  @baseFontSize * .928571429;
 	font-weight: bold;
@@ -40,8 +42,8 @@
 // Active state
 .btn.active,
 .btn:active {
-	padding-top: 9px;
-	padding-bottom: 7px;
+	padding-top: @btn-top-margin + 1;
+	padding-bottom: @btn-top-margin - 1;
 	@shadow: inset 0 1px 4px rgba(0,0,0,.4), 0 1px 0 @white;
 	.box-shadow(@shadow);
 	outline: 0;
