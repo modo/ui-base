@@ -8,7 +8,7 @@
 
 .nav {
   margin-left: 0;
-  margin-bottom: @baseLineHeight;
+  margin-bottom: @baseMargin;
   list-style: none;
 }
 
@@ -112,8 +112,7 @@
 
 // Actual tabs (as links)
 .nav-tabs > li > a {
-  padding-top: 9px;
-  padding-bottom: 9px;
+  padding: (@baseMargin * .666666666) @baseMargin;
   border: 1px solid transparent;
   .border-radius(4px 4px 0 0);
   &:hover {
