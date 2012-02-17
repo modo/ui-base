@@ -19,7 +19,8 @@ ul {
 
 ol {
 	list-style: decimal;
-	margin-left: 22px;
+	margin-left: 26px;
+	text-indent: -4px;
 }
 
 li {
@@ -43,7 +44,7 @@ dl {
 
 dt,
 dd {
-	line-height: @baseMargin;
+	line-height: @baseLineHeight;
 }
 
 dt {
@@ -51,7 +52,8 @@ dt {
 }
 
 dd {
-	margin-left: @baseMargin / 2;
+	margin: 0 0  @baseMargin * .5 @baseMargin * .75;
+	font-size: @baseFontSize * .9;
 }
 
 // line separated list
@@ -83,14 +85,10 @@ dd {
 			}
 		}
 	}
-	
-	ol.lined-list	{
-		margin-left: 24px;
-	}
 }
 
 ol.lined-list {
-	margin-left: 22px;
+	margin-left: 26px;
 	li { list-style-type: decimal }
 }
 
