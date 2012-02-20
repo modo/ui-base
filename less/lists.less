@@ -29,12 +29,10 @@ li {
 	&::-moz-list-bullet, &::-moz-list-number { color: lighten(@gray, 12%);}
 }
 
-.unstyled {
+.unstyled, .unstyled-list{
 	margin-left: 0;
 	li { list-style: none; }
-	.unstyled {
-		margin-left: @baseMargin;		
-	}
+	.unstyled { margin-left: @baseMargin; }
 }
 
 // Description Lists
