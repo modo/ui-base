@@ -18,7 +18,8 @@ p {
 	}
 }
 
-.small-text { font-size: @baseFontSize * .85; }
+.small-text   { font-size: @baseFontSize * .85; }
+.smaller-text { font-size: @baseFontSize * .785; }
 
 .lead {
 	margin-bottom: @baseMargin;
@@ -40,9 +41,7 @@ h1, h2, h3, h4, h5, h6, .header-1, .header-2, .header-3, .header-4, .header-5, .
 		color: @grayLight;
 	}
 	
-	&:first-child {
-		margin-top: 0;
-	}
+	&:first-child, &.first { margin-top: 0; }
 }
 
 h1, .header-1 {
