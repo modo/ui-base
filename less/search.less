@@ -1,0 +1,46 @@
+.search {
+	margin-bottom: 0;
+	position: relative;
+	
+	input {
+		width: 100%;
+		.box-sizing(border-box);
+	}
+	
+	button {
+		position: absolute;
+		top: 50%;
+		
+		i { .opacity(50); }
+		&:hover i { .opacity(100); }
+	}
+	
+	&.mini-search {
+		padding: 5px;
+		
+		input {
+			font-size: @baseFontSize * .928571429;
+			padding: 6px;
+		}
+		
+		button {
+			
+			right: 7px;
+			margin-top: -13px;
+		}
+	}
+	
+	&.jumbo-search {
+		padding: 6px;
+		
+		input {
+			font-size: @baseFontSize * 1.285714286;
+			padding: 10px;
+		}
+		
+		button {
+			margin-top: -16px;
+			right: 12px;
+		}
+	}
+}
