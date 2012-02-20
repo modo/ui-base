@@ -2,34 +2,72 @@
 // ----------
 
 .thumbnails {
-  margin-left: -20px;
-  list-style: none;
-  .clearfix();
+	margin-left: -20px;
+	list-style: none;
+	.clearfix();
 }
 .thumbnails > li {
-  float: left;
-  margin: 0 0 @baseLineHeight 20px;
+	float: left;
+	margin: 0 0 @baseLineHeight 20px;
 }
 .thumbnail {
-  display: block;
-  padding: 4px;
-  line-height: 1;
-  border: 1px solid #ddd;
-  .border-radius(4px);
-  .box-shadow(0 1px 1px rgba(0,0,0,.075));
+	display: block;
+	padding: 4px;
+	line-height: 1;
+	border: 1px solid #ddd;
+	.border-radius(4px);
+	.box-shadow(0 1px 1px rgba(0,0,0,.075));
 }
 // Add a hover state for linked versions only
 a.thumbnail:hover {
-  border-color: @linkColor;
-  .box-shadow(0 1px 4px rgba(0,105,214,.25));
+	border-color: @linkColor;
+	.box-shadow(0 1px 4px rgba(0,105,214,.25));
 }
 // Images and captions
 .thumbnail > img {
-  display: block;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+	display: block;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 .thumbnail .caption {
-  padding: 9px;
+	padding: 9px;
 }
+
+/* @group Frame Visual Effects */    
+.frame-container {
+	position: relative;
+	z-index: 1;
+}
+
+.frame {
+	display: block;
+	float: left;
+	img {
+		display: block;
+		z-index: -1;
+		position: relative;
+	}		
+}
+
+.inset {
+	.box-shadow(0 2px 5px rgba(0, 0, 0, .35) inset);
+	.border-radius(4px);	
+	img {
+		.border-radius(4px);
+	}
+}
+
+.outset {
+	@box-shadow: 0 1px 0 rgba(0,0,0,.2) inset,0 -1px 0 rgba(0,0,0,.2) inset,1px 0 0 rgba(0,0,0,.2) inset, -1px 0 0 rgba(0,0,0,.2) inset,0 2px 0 rgba(255,255,255,.3) inset,0 1px 2px rgba(0,0,0,.25);
+	.box-shadow(@box-shadow);
+	.border-radius(4px);	
+	img {
+		.border-radius(4px);
+	}
+}
+
+
+
+
+/* @end */
