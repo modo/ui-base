@@ -26,3 +26,36 @@
 .invisible {
   visibility: hidden;
 }
+
+.less-bottom { margin-bottom: @baseMargin * .25; }
+.more-bottom { margin-bottom: @baseMargin * 1.35; }
+
+.white-space { 
+	border:none;
+	margin-bottom: 50px;
+}
+
+
+// arrow-link
+.arrow-link {
+	.square(0px);
+	display: inline-block;
+	text-indent: -99999px;
+	
+	// IE7 won't do the border trick if there's a text indent, but it doesn't
+	// create the content that text-indent is hiding, either, so we're ok.
+	*text-indent: 0;	
+	content: "\2193";
+	
+	vertical-align: baseline;
+	margin: 0 2px 1px 2px;
+	border-left:  3px solid @gray;
+	border-right: 3px solid transparent;
+	border-top:   3px solid transparent;
+	border-bottom:3px solid transparent;
+	.opacity(60);
+}
+
+a:hover .elsewhere {
+	.opacity(100);
+}

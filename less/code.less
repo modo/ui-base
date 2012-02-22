@@ -31,7 +31,7 @@ pre {
 	display: block;
 	padding: (@baseMargin - 1) / 2;
 	margin: 0 0 @baseMargin / 2;
-	font-size: 12px;
+	font-size: @baseFontSize;
 	line-height: @baseLineHeight;
 	background-color: #f5f5f5;
 	border: 1px solid #ccc; // fallback for IE7-8
@@ -40,6 +40,8 @@ pre {
 	white-space: pre;
 	white-space: pre-wrap;
 	word-break: break-all;
+	
+
 
 	// Make prettyprint styles more spaced out for readability
 	&.prettyprint {
