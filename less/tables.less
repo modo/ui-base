@@ -16,7 +16,7 @@ table {
 	.border-radius(4px);
 
 	width: 100%;
-	margin-bottom: @baseLineHeight;
+	margin-bottom: @baseMargin;
 	
 	// Cells
 	th, td {
@@ -25,6 +25,8 @@ table {
 		text-align: left;
 		vertical-align: top;
 		border-top: 1px solid #ddd;
+		
+		*:last-child { margin-bottom: 0; }
 	}
 	th {
 		font-weight: bold;
