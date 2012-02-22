@@ -47,17 +47,18 @@ dd {
 
 dt {
 	font-weight: bold;
+	margin-bottom: @baseMargin * .4;
 }
 
 dd {
-	margin: 0 0  @baseMargin * .5 @baseMargin * .75;
+	margin: 0 0  @baseMargin * .8 @baseMargin * .75;
 	font-size: @baseFontSize * .9;
 }
 
 // line separated list
 .lined-list {
 	margin-left: 0;
-	& > li { 
+	& > li, & > dd { 
 		border: 1px solid lighten(@gray, 38%);
 		border-width: 0 0 1px 0;
 		padding: 6px 4px 7px;
