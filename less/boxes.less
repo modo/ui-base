@@ -49,12 +49,24 @@
 			margin-top: 0;
 		}
 	}
+	:last-child { margin-bottom: 0;	}
+	.box-section {
+		border: 0;
+		border-bottom: 1px solid lighten(@gray, 28%);
+		padding: 0 @baseMargin @baseMargin;
+		margin: @baseMargin -@baseMargin;
+		&:last-child { border-bottom: 0; padding-bottom:0; }
+		:last-child { margin-bottom: 0;	}
+	}
 	
 	&.box-info{
 		.boxBackground(@boxInfoBackground, darken(@boxInfoBackground,3%), darken(desaturate(@boxInfoBackground, 25%), 18%));
 		.box-header {
 			border-bottom-color: darken(@white, 20%);
 			text-shadow: 0 1px 0 #FFF;
+		}
+		.box-section { 
+			border-bottom-color: darken(@white, 20%);
 		}
 	}
 	
@@ -64,6 +76,9 @@
 			border-bottom-color: darken(desaturate(@boxActionBackground, 25%), 22%); 
 			text-shadow: 0 1px 0 #FFF;
 			.box-shadow(0 1px 0 rgba(255,255,255,1));
+		}
+		.box-section {
+			border-bottom-color: darken(desaturate(@boxActionBackground, 25%), 22%); 
 		}
 	}
 }
