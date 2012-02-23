@@ -485,6 +485,17 @@
     background-image: -o-linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
     background-image: linear-gradient(@angle, rgba(255,255,255,.15) 25%, transparent 25%, transparent 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,.15) 75%, transparent 75%, transparent);
   }
+  .vertical-and-image(@startColor: #555, @endColor: #333, @imageURL) {
+    background-color: mix(@startColor, @endColor, 60%);
+    background-image: @imageURL, -moz-linear-gradient(top, @startColor, @endColor); // FF 3.6+
+    background-image: @imageURL, -ms-linear-gradient(top, @startColor, @endColor); // IE10
+    background-image: @imageURL, -webkit-gradient(linear, 0 0, 0 100%, from(@startColor), to(@endColor)); // Safari 4+, Chrome 2+
+    background-image: @imageURL, -webkit-linear-gradient(top, @startColor, @endColor); // Safari 5.1+, Chrome 10+
+    background-image: @imageURL, -o-linear-gradient(top, @startColor, @endColor); // Opera 11.10
+    background-image: @imageURL, linear-gradient(top, @startColor, @endColor); // The standard
+    background-repeat: repeat-x;
+    filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",@startColor,@endColor)); // IE9 and down
+  }
 }
 // Reset filters for IE
 .reset-filter() {
