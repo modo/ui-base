@@ -401,6 +401,11 @@
    filter: e(%("alpha(opacity=%d)", @opacity));
 }
 
+// Link coloring
+.link-color(@color){
+	color: @color;
+	&:hover{ color: darken(@color, 10%); }
+}
 
 
 // BACKGROUNDS

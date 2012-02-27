@@ -193,3 +193,12 @@ cite {
 .danger-text, .error-text { color: @red; }
 .success-text { color: @green; }
 .info-text { color: @grayLight; }
+.dark-text { color: @grayDarker; }
+
+
+
+a.warning-text { .link-color(@orange); }
+a.danger-text, .error-text { .link-color(@red); }
+a.success-text { .link-color(@green); }
+a.info-text { .link-color(@grayLight); }
+a.dark-text { .link-color(@grayDarker); }
