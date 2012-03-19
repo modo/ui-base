@@ -7,5 +7,4 @@
 // @codekit-prepend 'bootstrap-button.js';
 // @codekit-prepend 'bootstrap-collapse.js';
 // @codekit-prepend 'bootstrap-dropdown.js';
-// @codekit-prepend 'bootstrap-tab.js';
 // @codekit-prepend 'bootstrap-transition.js';
