@@ -425,7 +425,7 @@
 // Gradient Bar Colors for buttons and alerts
 .gradientBar(@primaryColor, @secondaryColor, @borderColor) {
   #gradient > .vertical(@primaryColor, @secondaryColor);
-  border: 1px solid @borderColor;
+  border-color: @borderColor;
 }
 
 // Gradients
@@ -523,6 +523,8 @@
 .buttonBackground(@startColor, @endColor, @borderColor: black) {
   // gradientBar will set the background to a pleasing blend of these, to support IE<=9
   .gradientBar(@startColor, @endColor, @borderColor);
+  border-width: 1px;
+  border-style: solid;
   .reset-filter();
 
   // in these cases the gradient won't cover the background, so we override
