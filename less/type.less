@@ -32,7 +32,7 @@ p {
 // --------
 
 h1, h2, h3, h4, h5, h6, .header-1, .header-2, .header-3, .header-4, .header-5, .header-6 {
-	line-height: @baseLineHeight;
+	line-height: @baseLineHeight * .85;
 	margin: @baseMargin * 2 0 @baseMargin * .5 0;
 	color: @grayDark;
 	text-rendering: optimizelegibility; // Fix the character spacing for headings
@@ -188,6 +188,9 @@ small {
 cite {
 	font-style: normal;
 }
+
+.center { text-align: center; }
+.caps { text-transform: uppercase; }
 
 .warning-text { color: @orange; }
 .danger-text, .error-text { color: @red; }
