@@ -69,6 +69,12 @@
 	*border-right-width: 2px;
 	*border-bottom-width: 2px;
 	
+	// Aligns the dropdown menu to right
+	&.pull-right {
+		right: 0;
+		left: auto;
+	}
+	
 	// Allow for dropdowns to go bottom up (aka, dropup-menu)
 	&.bottom-up {
 		top: auto;
@@ -125,6 +131,12 @@
   }
   .dropdown-menu {
     display: block;
+  }
+  
+  // Right aligned dropdowns
+  .pull-right .dropdown-menu {
+    left: auto;
+    right: 0;
   }
 }
 
