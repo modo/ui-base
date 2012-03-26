@@ -82,25 +82,36 @@
 			width: 100% / 3;
 			border-left: 1px solid @grayLightest;
 			border-bottom: 1px solid @grayLightest;
-			min-height: 250px;
 			
 			&:nth-child(3n + 1) { clear: left; }
 			
 			.item-info { 
-				margin-top: @baseMargin + 150; 
-				
+				min-height: 80px;
 				footer { display: none; }
 			}
 			
-			.item-photo {
-				max-height: 150px;
+			.item-photo{
+				position: relative;
+				top: auto;
+				left: auto;
+				max-width: 200px;
+				margin-bottom: @baseMargin; 
+				
 			}
 			
 			.item-extra {
 				left: @baseMargin;
 				top: @baseMargin * 2;
 			}
-		}	
+			
+			@media screen and (max-width:599px) {
+				width: 100% / 2;
+				
+				&:nth-child(3n + 1) { clear: none; }
+				&:nth-child(2n + 1) { clear: left; }
+			}
+		}
+			
 	}
 }
 
