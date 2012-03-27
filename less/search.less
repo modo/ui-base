@@ -15,8 +15,9 @@
 		&:hover i { .opacity(100); }
 	}
 	
-	&.mini-search {
+	&.search-mini {
 		padding: 5px;
+		margin-bottom: @baseMargin;
 		
 		input {
 			font-size: @baseFontSize - 1;
@@ -30,7 +31,7 @@
 		}
 	}
 	
-	&.jumbo-search {
+	&.search-jumbo {
 		padding: 6px;
 		
 		input {
@@ -39,9 +40,14 @@
 		}
 		
 		button {
-			margin-top: -16px;
-			right: 12px;
-			.btn-large;
+			margin-top: -21px;
+			right: 7px;
+			margin-bottom: 0;
+			padding: 13px 18px;
+			
+			i {
+				.icon-24;
+			}
 		}
 	}
 }

@@ -62,11 +62,11 @@ a [class^="icon-"], a [class*=" icon-"] { text-decoration: inherit; }
 .btn-large [class^="icon-"], .btn-large [class*=" icon-"] { font-size: 17px; }
 
 // Preset icon sizes
-.icon-6:before { font-size: 6px; vertical-align: 2px; }
-.icon-10:before { font-size: 10px; }
-.icon-16:before { font-size: 16px; }
-.icon-24:before { font-size: 24px; }
-.icon-32:before { font-size: 32px; }
+.icon-6,.icon-6:before { font-size: 6px; vertical-align: 2px; }
+.icon-10,.icon-10:before { font-size: 10px; }
+.icon-16,.icon-16:before { font-size: 16px; }
+.icon-24,.icon-24:before { font-size: 24px; }
+.icon-32,.icon-32:before { font-size: 32px; }
 
 // Icon colors
 .icon-white:before { color: @white; }
@@ -77,6 +77,7 @@ a [class^="icon-"], a [class*=" icon-"] { text-decoration: inherit; }
 .icon-danger:before { color: @red; text-shadow: none; }
 .icon-warning:before { color: @yellow; text-shadow: none; }
 .icon-success:before { color: @green; text-shadow: none; }
+.icon-primary:before { color: @linkColor; text-shadow: none; }
 
 // Icon hover colors
 a:hover .icon-gray:before { color: @gray; }
