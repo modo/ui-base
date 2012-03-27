@@ -152,11 +152,13 @@ abbr {
 // Blockquotes
 blockquote {
 	padding: 0 0 0 15px;
-	margin: 0 0 @baseLineHeight;
+	margin: 0 0 @baseMargin @baseMargin * 2;
 	border-left: 5px solid @grayLighter;
 	p {
 		margin-bottom: 0;
-		#font > .shorthand(16px,300,@baseLineHeight * 1.25);
+		#font > .serif(14px,300,@baseLineHeight * 1.1);
+		font-style: italic;
+		color: @gray;
 	}
 	small {
 		display: block;
