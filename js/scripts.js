@@ -8,3 +8,4 @@
 // @codekit-prepend 'bootstrap-collapse.js';
 // @codekit-prepend 'bootstrap-dropdown.js';
 // @codekit-prepend 'bootstrap-transition.js';
+// @codekit-prepend 'jquery.noise.js';
