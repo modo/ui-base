@@ -34,7 +34,7 @@
 					        for (x=0; x<canvas.width; x += 1) {
 						        for (y=0; y<canvas.height; y += 1) {
 						        	ctx.fillStyle = "rgba(" + [
-						        		Math.floor(Math.random() * r + this.brightness), 
+						        		Math.floor(Math.random() * r + this.brightness),
 						        		Math.floor(Math.random() * g + this.brightness), 
 						        		Math.floor(Math.random() * b + this.brightness),
 						        		this.opacity
