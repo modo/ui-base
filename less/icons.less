@@ -62,10 +62,11 @@ a [class^="icon-"], a [class*=" icon-"] { text-decoration: inherit; }
 .btn-large [class^="icon-"], .btn-large [class*=" icon-"] { font-size: 17px; }
 
 // Preset icon sizes
-.icon-10:before { font-size: 10px; }
-.icon-16:before { font-size: 16px; }
-.icon-24:before { font-size: 24px; }
-.icon-32:before { font-size: 32px; }
+.icon-6,.icon-6:before { font-size: 6px; vertical-align: 2px; }
+.icon-10,.icon-10:before { font-size: 10px; }
+.icon-16,.icon-16:before { font-size: 16px; }
+.icon-24,.icon-24:before { font-size: 24px; }
+.icon-32,.icon-32:before { font-size: 32px; }
 
 // Icon colors
 .icon-white:before { color: @white; }
@@ -73,27 +74,16 @@ a [class^="icon-"], a [class*=" icon-"] { text-decoration: inherit; }
 .icon-gray:before { color: @grayLighter; }
 .icon-lighten:before { color: fade(@white, 45%); text-shadow: none; }
 .icon-darken:before { color: fade(@black, 45%); text-shadow: none; }
+.icon-danger:before { color: @red; text-shadow: none; }
+.icon-warning:before { color: @yellow; text-shadow: none; }
+.icon-success:before { color: @green; text-shadow: none; }
+.icon-primary:before { color: @linkColor; text-shadow: none; }
 
 // Icon hover colors
 a:hover .icon-gray:before { color: @gray; }
 a:hover .icon-lighten:before { color: fade(@white, 65%); }
 a:hover .icon-darken:before { color: fade(@black, 65%); }
 
-
-
-[class^="icon-social-"] { 
-	background-image: url('@{baseImageURL}/social-icons.png'); 
-	width:16px; 
-	height:16px;
-	display: inline-block;
-	line-height: 16px;
-	.border-radius(3px);
-	
-	&.icon-large {
-		width:32px; 
-		height:32px; 
-	}
-}
 
 /*  Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
     readers do not read off random characters that represent icons */
@@ -250,6 +240,25 @@ a:hover .icon-darken:before { color: fade(@black, 65%); }
 
 
 /* Social Icons */
+[class^="icon-social-"] { 
+	background-image: url('@{baseImageURL}/social-icons.png'); 
+	width:16px; 
+	height:16px;
+	display: inline-block;
+	line-height: 16px;
+	.border-radius(3px);
+	
+	&.icon-med {
+		width:24px; 
+		height:24px; 
+	}
+	
+	&.icon-large {
+		width:32px; 
+		height:32px; 
+	}
+}
+
 .icon-social-twitter					{ background-position: -4px   -40px; }
 .icon-social-rss						{ background-position: -22px  -40px; }
 .icon-social-paypal						{ background-position: -40px  -40px; }
@@ -258,10 +267,18 @@ a:hover .icon-darken:before { color: fade(@black, 65%); }
 .icon-social-facebook					{ background-position: -94px  -40px; }
 .icon-social-email						{ background-position: -112px -40px; }
 
-.icon-social-twitter.icon-large			{ background-position: -4px   -4px; }
-.icon-social-rss.icon-large				{ background-position: -38px  -4px; }
-.icon-social-paypal.icon-large			{ background-position: -72px  -4px; }
-.icon-social-linked-in.icon-large		{ background-position: -106px -4px; }
-.icon-social-google-plus.icon-large		{ background-position: -140px -4px; }
-.icon-social-facebook.icon-large		{ background-position: -174px -4px; }
-.icon-social-google.icon-large			{ background-position: -208px -4px; }
+.icon-med.icon-social-twitter			{ background-position: -4px   -62px; }
+.icon-med.icon-social-rss				{ background-position: -31px  -62px; }
+.icon-med.icon-social-paypal			{ background-position: -58px  -62px; }
+.icon-med.icon-social-linked-in			{ background-position: -85px  -62px; }
+.icon-med.icon-social-google-plus		{ background-position: -112px -62px; }
+.icon-med.icon-social-facebook			{ background-position: -139px -62px; }
+.icon-med.icon-social-email				{ background-position: -166px -62px; }
+
+.icon-large.icon-social-twitter			{ background-position: -4px   -62px; }
+.icon-large.icon-social-rss				{ background-position: -38px  -4px; }
+.icon-large.icon-social-paypal			{ background-position: -72px  -4px; }
+.icon-large.icon-social-linked-in		{ background-position: -106px -4px; }
+.icon-large.icon-social-google-plus		{ background-position: -140px -4px; }
+.icon-large.icon-social-facebook		{ background-position: -174px -4px; }
+.icon-large.icon-social-email			{ background-position: -208px -4px; }

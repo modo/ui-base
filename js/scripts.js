@@ -1,6 +1,7 @@
 // General plugins
 // ---------------------------------------------
 // @codekit-prepend 'jquery.jqModal.js';
+// @codekit-prepend 'jquery.noise.js';
 
 // Bootstrap functions
 // @codekit-prepend 'bootstrap-alert.js';
