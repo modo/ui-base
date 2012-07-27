@@ -26,34 +26,47 @@
 
 // Visibility utilities
 
+
 // For desktops
-.visible-phone     { display: none; }
-.visible-tablet    { display: none; }
-.visible-desktop   { display: block; }
-.hidden-phone      { display: block; }
-.hidden-tablet     { display: block; }
-.hidden-desktop    { display: none; }
+html .visible-phone     { display: none; }
+html .visible-tablet    { display: none; }
+
+html .visible-desktop    { display: block; }
+html .hidden-phone       { display: block; }
+html .hidden-tablet      { display: block; }
+span.visible-desktop{ display: inline; }
+span.hidden-phone   { display: inline; }
+span.hidden-tablet  { display: inline; }
+
+html .hidden-desktop    { display: none; }
 
 // Phones only
 @media (max-width: 767px) {
   // Show
-  .visible-phone     { display: block; }
+  html .visible-phone     { display: block; }
+  span.visible-phone      { display: inline; }
+  
   // Hide
-  .hidden-phone      { display: none; }
+  html .hidden-phone      { display: none; }
   // Hide everything else
-  .hidden-desktop    { display: block; }
-  .visible-desktop   { display: none; }
+  html .hidden-desktop    { display: block; }
+  span.hidden-desktop	  { display: inline; }
+  
+  html .visible-desktop   { display: none; }
 }
 
 // Tablets & small desktops only
 @media (min-width: 768px) and (max-width: 979px) {
   // Show
-  .visible-tablet    { display: block; }
+  html .visible-tablet    { display: block; }
+  span.visible-tablet{ display: inline; }
+  
   // Hide
-  .hidden-tablet     { display: none; }
+  html .hidden-tablet     { display: none; }
   // Hide everything else
-  .hidden-desktop    { display: block; }
-  .visible-desktop   { display: none; }
+  html .hidden-desktop    { display: block; }
+  span.hidden-desktop{ display: inline; }
+  span.visible-desktop   { display: none; }
 }
 
 // Make media fill its container
